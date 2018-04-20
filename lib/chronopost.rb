@@ -1,5 +1,7 @@
 # frozen_string_literal: true
 
+require 'active_support/inflector'
+
 require 'chronopost/version'
 require 'chronopost/configuration'
 require 'chronopost/errors'
