@@ -3,7 +3,7 @@
 module Chronopost
   module Labels
     class Create < Operation
-      OPERATION = :shipping_multi_parcel
+      OPERATION = :shipping_v2
 
       DEFAULT_PARAMS = {
         headerValue: {
