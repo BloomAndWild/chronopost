@@ -18,9 +18,12 @@ module Chronopost
       end
 
       def inject_credentials(params, default_params)
-        default_params
+        inject_defaults(params, default_params)
           .deep_merge(credentials)
-          .deep_merge(params)
+      end
+
+      def inject_defaults(params, default_params)
+        default_params.deep_merge(params)
       end
 
       private

@@ -27,6 +27,10 @@ module Chronopost
       Chronopost.services.resolve(service_name)
     end
 
+    def params_with_defaults
+      service.inject_defaults(params, default_params)
+    end
+
     def params_with_credentials
       service.inject_credentials(params, default_params)
     end
