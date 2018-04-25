@@ -24,6 +24,7 @@ require 'chronopost/drop_off_points/search'
 require 'chronopost/labels/create'
 require 'chronopost/labels/track'
 require 'chronopost/labels/fetch'
+require 'chronopost/labels/cancel'
 
 module Chronopost
   module_function
