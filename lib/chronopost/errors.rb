@@ -12,13 +12,16 @@ module Chronopost
   class InvalidServiceError < Error; end
 
   class ResponseError < Error
-
     def initialize(status)
       @status = status
     end
 
     def status
       @status.code
+    end
+
+    def to_s
+      message
     end
 
     def message

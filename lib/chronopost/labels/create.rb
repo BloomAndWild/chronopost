@@ -3,7 +3,7 @@
 module Chronopost
   module Labels
     class Create < Operation
-      OPERATION = :shipping_v2
+      OPERATION = :shipping_v6
 
       DEFAULT_PARAMS = {
         headerValue: {
@@ -104,13 +104,22 @@ module Chronopost
         skybillParamsValue: {
           duplicata: 'N',
           mode: 'SPD',
-          withReservation: 1,
+          # withReservation: 1,
         },
         password: '',
-        modeRetour: 2,
-        numberOfParcel: 1,
-        version: 2.0,
-        multiParcel: 'N',
+        # modeRetour: 2,
+        # numberOfParcel: 1,
+        # multiParcel: 'N',
+        version: 6.0,
+        # scheduledValue: {
+        #   appointmentValue: {
+        #     timeSlotEndDate: nil,
+        #     timeSlotStartDate: nil,
+        #     timeSlotTariffLevel: nil,
+        #   },
+        #   expirationDate: nil,
+        #   sellByDate: nil,
+        # },
       }.freeze
 
       # @!visibility private
