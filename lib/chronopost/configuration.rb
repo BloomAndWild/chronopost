@@ -10,7 +10,7 @@ module Chronopost
 
     attr_accessor :account_number, :account_password,
       :api_timeout, :api_max_retries,
-      :debug, :monitor, :enabled_services
+      :debug, :monitor, :enabled_services, :adapter
 
     def initialize
       @account_number = nil

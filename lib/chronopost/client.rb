@@ -24,6 +24,7 @@ module Chronopost
         read_timeout: Chronopost.config.api_timeout,
         log: Chronopost.config.debug,
         pretty_print_xml: true,
+        adapter: Chronopost.config.adapter || :httpclient
       }
     end
 
