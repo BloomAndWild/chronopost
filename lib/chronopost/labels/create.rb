@@ -6,6 +6,11 @@ module Chronopost
       OPERATION = :shipping_v6
 
       DEFAULT_PARAMS = {
+        esdValue: {
+          shipperCarriesCode: '',
+          shipperBuildingFloor: '',
+          shipperServiceDirection: '',
+        },
         headerValue: {
           accountNumber: '',
           idEmit: 'CHRFR',
