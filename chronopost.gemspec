@@ -15,7 +15,7 @@ Gem::Specification.new do |spec|
   spec.summary = 'Chronopost client'
   spec.description = 'An interface for the Chronopost Web Service'
   spec.homepage = 'https://github.com/vinted/chronopost'
-  spec.required_ruby_version = '~> 2.0'
+  spec.required_ruby_version = '~> 3.0.3'
 
   spec.license = 'MIT'
 
