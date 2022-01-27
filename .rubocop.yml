@@ -47,7 +47,7 @@ Bundler/OrderedGems:
   Enabled: false
 
 AllCops:
-  TargetRubyVersion: 2.4
+  TargetRubyVersion: 3.0
   DisplayCopNames: true
   Include:
     - '**/Rakefile'
