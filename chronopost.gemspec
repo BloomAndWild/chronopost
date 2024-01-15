@@ -15,6 +15,7 @@ Gem::Specification.new do |spec|
   spec.summary = 'Chronopost client'
   spec.description = 'An interface for the Chronopost Web Service'
   spec.homepage = 'https://github.com/vinted/chronopost'
+  spec.required_ruby_version = '>= 3.1.3'
 
   spec.license = 'MIT'
 
@@ -29,7 +30,9 @@ Gem::Specification.new do |spec|
   spec.add_runtime_dependency 'activesupport'
   spec.add_runtime_dependency 'interactor-initializer'
   spec.add_runtime_dependency 'savon', '>= 2.13.0'
+  spec.add_runtime_dependency 'net-smtp' # Required by savon with ruby 3.1 and above
 
+  spec.add_development_dependency 'savon', '>= 2.13.0'
   spec.add_development_dependency 'bundler'
   spec.add_development_dependency 'factory_bot'
   spec.add_development_dependency 'rake'
@@ -37,6 +40,4 @@ Gem::Specification.new do |spec|
   spec.add_development_dependency 'rspec'
   spec.add_development_dependency 'webmock'
   spec.add_development_dependency 'yard'
-  spec.add_development_dependency 'rubocop'
-  spec.add_development_dependency 'rubocop-rspec'
 end
