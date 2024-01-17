@@ -9,12 +9,12 @@ Gem::Specification.new do |spec|
   spec.name = 'chronopost'
   spec.version = Chronopost::VERSION
 
-  spec.authors = ['Žilvinas Verseckas']
-  spec.email = ['zilvinas.verseckas@vinted.com']
+  spec.authors = ['Bloom & Wild']
+  spec.email = ['oskar@bloomandwild.com']
 
   spec.summary = 'Chronopost client'
   spec.description = 'An interface for the Chronopost Web Service'
-  spec.homepage = 'https://github.com/vinted/chronopost'
+  spec.homepage = 'https://github.com/BloomAndWild/chronopost'
   spec.required_ruby_version = '>= 3.1.3'
 
   spec.license = 'MIT'
